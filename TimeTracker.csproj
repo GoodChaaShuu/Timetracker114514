@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- WinExe：双击时不弹黑框，纯托盘/窗口程序 -->
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>TimeTracker</AssemblyName>
+    <RootNamespace>TimeTracker</RootNamespace>
+    <LangVersion>latest</LangVersion>
+
+    <!-- 打包出来的 EXE 右键属性里能看到像样的版本信息 -->
+    <Product>TimeTracker</Product>
+    <AssemblyTitle>TimeTracker</AssemblyTitle>
+    <Description>统计在各个应用上所花费的时间</Description>
+    <Version>0.1.0</Version>
+    <Company>TimeTracker</Company>
+    <Copyright>MIT License</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.10" />
+  </ItemGroup>
+
+</Project>
